@@ -1,0 +1,50 @@
+body{
+    background-color: #F3F9FF;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 1fr 50px;
+}
+
+header{   
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 32px;
+}
+header h1{
+    color: #0185FF;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+main{
+    display: grid;
+    place-items: center;
+    padding: 32px;
+}
+
+.gallery{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px #bbb;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    gap: 16px;
+    
+}
+
+.gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer{
+    text-align: center;
+    
+}

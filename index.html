@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/spinner.css">
+    <script src="./js/main.js" defer type="module"></script>
+    <title>Galeria de Fotos</title>
+</head>
+<body>
+    <dialog class="spinner-container">
+        <div class="spinner-fast"></div>
+    </dialog>
+    <dialog id="modal" class="modal">
+        <div class="modal__container">
+            <span class="modal__close"  id="close">&times;</span>
+            <img src="./img/add.png" alt="" class="modal__preview" id="preview">
+            <input type="text" class="modal__name" id="name" placeholder="Nome da Foto">
+            <div class="modal__action">
+                <button class="button" id="cancelar">Cancelar</button>
+                <label class="button">
+                    <span>Carregar Imagem</span>
+                    <input type="file" class="button" id="upload">
+                </label>
+                <button class="button" id="salve">Salvar</button>
+            </div>
+        </div>
+    </dialog>
+    <header>
+        <h1>Galeria de Fotos</h1>
+        <button class="button" id="add-photo">Adicionar Foto</button>
+    </header>
+    <main>
+        <div class="gallery" id="gallery"></div>
+    </main>
+    <footer>Fernando Leonid</footer>
+</body>
+</html>
