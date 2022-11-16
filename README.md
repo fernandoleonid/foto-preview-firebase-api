@@ -1,4 +1,7 @@
 # Exemplo de uso firebase storage
+
+![](./img/screenshot.png)
+
 Projeto com fins didáticos, demostrando a utilização do firebase como storage e enviando o link para o server API.
 
 # Recursos (features) utilizados
